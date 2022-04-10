@@ -1,38 +1,128 @@
 .App {
   text-align: center;
+  padding: 0 150px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__form{
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  background-color: #e9e9eb;
+  width: 80%;
+  margin: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 1920px) {
+  .App {
+    padding: 0 10px;
+  }
+  .app__form{
+    width: 95%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (max-width: 1200px) {
+  .App {
+    padding: 0 5px;
+  }
+  .app__form{
+    width: 92%;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 1024px) {
+  .App {
+    padding: 0 5px;
+  }
+  .app__form{
+    width: 90%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 768px) {
+  .app__form{
+    width: 88%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+@media only screen and (max-width: 480px) {
+  .App {
+    padding: 1px;
   }
+  .app__form{
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .app__form{
+    width: 75%;
+  }
+}
+
+.app__formControl{
+  display: flex !important;
+  flex-direction: row !important;
+}
+.app__input{
+  flex: 1;
+}
+.app__iconButton{
+  flex: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #313131;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #313131;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

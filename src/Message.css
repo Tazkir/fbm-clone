@@ -1,0 +1,77 @@
+.message {
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+}
+.message__user{
+    margin-left: auto;
+    color: white;
+    text-align: left !important;
+}
+
+.message__userCard{
+    background-color: #0b81ff !important;
+}
+.message__guestCard{
+    background-color: #e9e9eb !important;
+}
+
+@media only screen and (max-width: 1920px) {
+    .message{
+        padding: 5px;
+        margin: 5px;
+    }
+    .message__user{
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .message{
+        padding: 5px;
+        margin: 5px;
+    }
+    .message__user{
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .message{
+        padding: 5px;
+        margin: 5px;
+    }
+    .message__user{
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .message{
+        padding: 5px;
+        margin: 5px;
+    }
+    .message__user{
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .message{
+        padding: 5px;
+        margin: 5px;
+    }
+    .message__user{
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .message{
+        padding: 1px;
+        margin: 1px;
+    }
+    .message__user{
+        margin-left: auto;
+    }
+}
